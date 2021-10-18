@@ -8,12 +8,12 @@ public class MoodAnalyzerTest {
     @Test
     public void MoodTest(){
         //create object of class
-            MoodAnalyzer analyzemood=new MoodAnalyzer();
+            MoodAnalyzer analyzemood=new MoodAnalyzer("sad");
             //pass the message
-            String moodreturn=analyzemood.analyzeMood("i am sad");
+            String moodreturn=analyzemood.analyzeMood();
             //check test case is true or false
-          Assert.assertEquals("sad",moodreturn);
-          System.out.println(moodreturn);
+         Assert.assertEquals("sad",moodreturn);
+          System.out.println("analyzed mood is:->"+moodreturn);
 
         }
 }
