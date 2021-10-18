@@ -8,7 +8,7 @@ public class MoodAnalyzerTest {
     @Test
     public void MoodTest(){
         //create object of class
-            MoodAnalyzer analyzemood=new MoodAnalyzer("sad");
+            MoodAnalyzer analyzemood=new MoodAnalyzer("");
             //pass the message
             String moodreturn=analyzemood.analyzeMood();
             //check test case is true or false

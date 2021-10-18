@@ -14,9 +14,10 @@ public class MoodAnalyzer extends Exception {
 
     //analyzemood by using given message
     public String analyzeMood() {
-         //handle exception when we entered null mood
+         //handle exception when we entered null mood or empty mood
         try {
-            if (mood == null) {
+
+            if (mood == null || mood.isEmpty()) {
                 throw new MoodAnalyzer(" Invalid mood null value");
             }
 
